@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review | Neel Gajjar Salon</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="canonical" href="https://aurumatelier.com/reviews/new/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .review-form-section {
+            padding: 4rem 0;
+        }
+        .rating-stars {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        .rating-stars input {
+            display: none;
+        }
+        .rating-stars label {
+            font-size: 2rem;
+            color: var(--sand-dark);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .rating-stars label:hover,
+        .rating-stars label:hover ~ label,
+        .rating-stars input:checked ~ label {
+            color: var(--accent);
+        }
+        .rating-stars {
+            direction: rtl;
+        }
+        .rating-stars label {
+            direction: ltr;
+        }
+    </style>
+</head>
+<body class="bg-sand text-ink font-sans">
+    <div class="site-shell min-h-screen flex flex-col">
+        <div class="site-orb site-orb-a"></div>
+        <div class="site-orb site-orb-b"></div>
+        
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Neel Gajjar</a>
+                <nav class="nav-desktop">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="login.html" class="btn-outline">Login</a>
+                    <a href="book.html" class="btn-solid">Book Now</a>
+                </div>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="mobile-auth">
+                    <a href="login.html" class="btn-outline" style="text-align: center;">Login</a>
+                    <a href="book.html" class="btn-solid" style="text-align: center;">Book Now</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <!-- Review Form Section -->
+            <section class="review-form-section">
+                <div class="container">
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <div class="glass-card">
+                            <h2 class="font-display" style="font-size: 1.5rem; text-align: center;">Share Your Experience</h2>
+                            <p style="text-align: center; color: rgba(31, 27, 22, 0.6); margin-top: 0.5rem; margin-bottom: 1.5rem;">Your feedback helps us improve and helps other clients make decisions.</p>
+                            
+                            <form id="review-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Rating</label>
+                                    <div class="rating-stars">
+                                        <input type="radio" id="star5" name="rating" value="5" required>
+                                        <label for="star5" title="5 stars">&#9733;</label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4" title="4 stars">&#9733;</label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3" title="3 stars">&#9733;</label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2" title="2 stars">&#9733;</label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1" title="1 star">&#9733;</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="comment">Your Review</label>
+                                    <textarea id="comment" name="comment" class="form-textarea" placeholder="Tell us about your experience..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn-solid" style="width: 100%;">Submit Review</button>
+                            </form>
+                            <p style="text-align: center; font-size: 0.75rem; color: rgba(31, 27, 22, 0.5); margin-top: 1rem;">Reviews are moderated before appearing on the site.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h4>Neel Gajjar</h4>
+                        <p>Luxury hair and beauty studio delivering bespoke transformations, elevated rituals, and a calm premium experience.</p>
+                    </div>
+                    <div>
+                        <h5 class="footer-heading">Studio</h5>
+                        <ul class="footer-links">
+                            <li>123 Madison Ave, New York, NY</li>
+                            <li>Tue-Sun 09:00-20:00</li>
+                            <li>+1-212-555-0100</li>
+                            <li>hello@aurumatelier.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="footer-heading">Reserve</h5>
+                        <p style="font-size: 0.875rem; color: rgba(249,245,238,0.7); margin-bottom: 1rem;">Book an appointment and indulge in a tailored service experience.</p>
+                        <a href="book.html" class="btn-solid">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 Neel Gajjar Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

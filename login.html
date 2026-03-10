@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Neel Gajjar Salon</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="canonical" href="https://aurumatelier.com/login/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .auth-page {
+            min-height: calc(100vh - 200px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        .auth-card {
+            width: 100%;
+            max-width: 420px;
+        }
+        .auth-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .auth-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .auth-header p {
+            color: rgba(31, 27, 22, 0.6);
+            font-size: 0.875rem;
+        }
+        .form-footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+            color: rgba(31, 27, 22, 0.6);
+        }
+        .form-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-sand text-ink font-sans">
+    <div class="site-shell min-h-screen flex flex-col">
+        <div class="site-orb site-orb-a"></div>
+        <div class="site-orb site-orb-b"></div>
+        
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Neel Gajjar</a>
+                <nav class="nav-desktop">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="login.html" class="btn-outline">Login</a>
+                    <a href="book.html" class="btn-solid">Book Now</a>
+                </div>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="mobile-auth">
+                    <a href="login.html" class="btn-outline" style="text-align: center;">Login</a>
+                    <a href="book.html" class="btn-solid" style="text-align: center;">Book Now</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <!-- Login Section -->
+            <section class="auth-page">
+                <div class="container">
+                    <div class="glass-card auth-card">
+                        <div class="auth-header">
+                            <h1>Welcome Back</h1>
+                            <p>Sign in to manage your appointments</p>
+                        </div>
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="password">Password</label>
+                                <input type="password" id="password" name="password" class="form-input" required>
+                            </div>
+                            <button type="submit" class="btn-solid" style="width: 100%;">Sign In</button>
+                        </form>
+                        <div class="form-footer">
+                            Don't have an account? <a href="register.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h4>Neel Gajjar</h4>
+                        <p>Luxury hair and beauty studio delivering bespoke transformations, elevated rituals, and a calm premium experience.</p>
+                    </div>
+                    <div>
+                        <h5 class="footer-heading">Studio</h5>
+                        <ul class="footer-links">
+                            <li>123 Madison Ave, New York, NY</li>
+                            <li>Tue-Sun 09:00-20:00</li>
+                            <li>+1-212-555-0100</li>
+                            <li>hello@aurumatelier.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="footer-heading">Reserve</h5>
+                        <p style="font-size: 0.875rem; color: rgba(249,245,238,0.7); margin-bottom: 1rem;">Book an appointment and indulge in a tailored service experience.</p>
+                        <a href="book.html" class="btn-solid">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 Neel Gajjar Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('This is a demo site. Login functionality is disabled.');
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Neel Gajjar Salon</title>
+    <meta name="description" content="Request a salon appointment at Neel Gajjar in New York. Choose a service, stylist, and available time.">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="canonical" href="https://aurumatelier.com/book/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Book Appointment | Neel Gajjar">
+    <meta property="og:description" content="Request a salon appointment. Choose a service, stylist, and available time.">
+    <meta property="og:url" content="https://aurumatelier.com/book/">
+    <meta property="og:image" content="https://aurumatelier.com/static/img/og-default.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-sand text-ink font-sans">
+    <div class="site-shell min-h-screen flex flex-col">
+        <div class="site-orb site-orb-a"></div>
+        <div class="site-orb site-orb-b"></div>
+        
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Neel Gajjar</a>
+                <nav class="nav-desktop">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="login.html" class="btn-outline">Login</a>
+                    <a href="book.html" class="btn-solid">Book Now</a>
+                </div>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu">
+                <nav class="mobile-nav">
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="team.html" class="nav-link">Team</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <div class="mobile-auth">
+                    <a href="login.html" class="btn-outline" style="text-align: center;">Login</a>
+                    <a href="book.html" class="btn-solid" style="text-align: center;">Book Now</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <!-- Booking Section -->
+            <section class="section">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="booking-info">
+                            <h1 class="page-title">Book Appointment</h1>
+                            <p>Choose your service, stylist, and preferred date. Available times load automatically.</p>
+                            <div class="booking-notes">
+                                <div class="booking-note">Bookings require approval and confirmation by our concierge team.</div>
+                                <div class="booking-note">Cancellations are available from your dashboard.</div>
+                            </div>
+                        </div>
+                        <div class="glass-card">
+                            <h3 class="font-display" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Request Booking</h3>
+                            <form id="booking-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="service">Service *</label>
+                                    <select id="service" name="service" class="form-select" required>
+                                        <option value="">Select a service</option>
+                                        <option value="signature-cut">Signature Cut & Style - $125</option>
+                                        <option value="express-trim">Express Trim - $55</option>
+                                        <option value="mens-cut">Men's Cut - $75</option>
+                                        <option value="balayage">Balayage - $285</option>
+                                        <option value="full-color">Full Color - $145</option>
+                                        <option value="highlights-partial">Highlights (Partial) - $165</option>
+                                        <option value="highlights-full">Highlights (Full) - $245</option>
+                                        <option value="keratin">Keratin Treatment - $350</option>
+                                        <option value="scalp-revitalize">Scalp Revitalize - $85</option>
+                                        <option value="deep-conditioning">Deep Conditioning - $45</option>
+                                        <option value="bridal-trial">Bridal Trial - $125</option>
+                                        <option value="bridal-dayof">Bridal Day-Of - $250</option>
+                                        <option value="special-event">Special Event - $95</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="staff">Stylist *</label>
+                                    <select id="staff" name="staff" class="form-select" required>
+                                        <option value="">Select a stylist</option>
+                                        <option value="isabella">Isabella Chen - Master Colorist</option>
+                                        <option value="marcus">Marcus Johnson - Precision Cuts</option>
+                                        <option value="sofia">Sofia Martinez - Blonde Specialist</option>
+                                        <option value="elena">Elena Rossi - Bridal & Events</option>
+                                        <option value="david">David Park - Texture Expert</option>
+                                        <option value="rachel">Rachel Kim - Treatment Specialist</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="date">Date *</label>
+                                    <input type="date" id="date" name="date" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="time">Available Time *</label>
+                                    <select id="time" name="time" class="form-select" required>
+                                        <option value="">Select a time</option>
+                                        <option value="09:00">09:00 AM</option>
+                                        <option value="09:30">09:30 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="10:30">10:30 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">01:00 PM</option>
+                                        <option value="13:30">01:30 PM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="14:30">02:30 PM</option>
+                                        <option value="15:00">03:00 PM</option>
+                                        <option value="15:30">03:30 PM</option>
+                                        <option value="16:00">04:00 PM</option>
+                                        <option value="16:30">04:30 PM</option>
+                                        <option value="17:00">05:00 PM</option>
+                                        <option value="17:30">05:30 PM</option>
+                                        <option value="18:00">06:00 PM</option>
+                                        <option value="18:30">06:30 PM</option>
+                                        <option value="19:00">07:00 PM</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="notes">Notes</label>
+                                    <textarea id="notes" name="notes" class="form-textarea" placeholder="Any special requests or information we should know..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-solid" style="width: 100%;">Request Booking</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h4>Neel Gajjar</h4>
+                        <p>Luxury hair and beauty studio delivering bespoke transformations, elevated rituals, and a calm premium experience.</p>
+                    </div>
+                    <div>
+                        <h5 class="footer-heading">Studio</h5>
+                        <ul class="footer-links">
+                            <li>123 Madison Ave, New York, NY</li>
+                            <li>Tue-Sun 09:00-20:00</li>
+                            <li>+1-212-555-0100</li>
+                            <li>hello@aurumatelier.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="footer-heading">Reserve</h5>
+                        <p style="font-size: 0.875rem; color: rgba(249,245,238,0.7); margin-bottom: 1rem;">Book an appointment and indulge in a tailored service experience.</p>
+                        <a href="book.html" class="btn-solid">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2026 Neel Gajjar Salon. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
