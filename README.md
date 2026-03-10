@@ -4,7 +4,7 @@
 
 ---
 
-## ✨ Why Choose Neel Gajjar?
+## ✨ Why Choose Neel Gajjar's Premium salon site?
 
 In today's digital age, your salon needs more than just a pretty website—it needs a complete digital solution that attracts clients, streamlines operations, and grows your business.
 
@@ -242,4 +242,5 @@ Have questions about setting up or customizing? We'd love to help you succeed!
 *Built with ❤️ for salon owners who want to grow their business online.*
 
 **Neel Gajjar** — *Where Art Meets Hair* 💫
+
 
