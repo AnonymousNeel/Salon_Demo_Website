@@ -68,6 +68,7 @@ For salons wanting complete functionality with booking, payments, and admin mana
 ---
 
 ## 📸 Preview
+https://anonymousneel.github.io/Salon_Demo_Website/
 
 ### Static Demo Pages
 | Page | Description |
@@ -242,5 +243,6 @@ Have questions about setting up or customizing? We'd love to help you succeed!
 *Built with ❤️ for salon owners who want to grow their business online.*
 
 **Neel Gajjar** — *Where Art Meets Hair* 💫
+
 
 
